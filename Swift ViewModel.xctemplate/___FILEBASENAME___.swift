@@ -16,7 +16,7 @@ protocol ___FILEBASENAME___Type {
 
 class ___FILEBASENAME___: ___FILEBASENAME___Type {
 
-    // :MARK Variables
+    // MARK: Variables
     
     var model: Model? {
         return self.modelService.model
@@ -26,22 +26,22 @@ class ___FILEBASENAME___: ___FILEBASENAME___Type {
         return self.modelService.modelPublisher
     }
 
-    // :MARK Services
+    // MARK: Services
     
     @Injected
     private var modelService: ModelServiceType
 
-    // :MARK Init
+    // MARK: Init
 
     init() {
         self.configure()
     }
 
-    // :MARK Configure
+    // MARK: Configure
 
     func configure() {}
     
-    // :MARK functions
+    // MARK: functions
 
     func save(_ model: Model) async throws {
         try await self.modelService.save(model: model)

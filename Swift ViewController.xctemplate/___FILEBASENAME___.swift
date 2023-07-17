@@ -10,32 +10,32 @@ import UIKit
 
 class ___FILEBASENAME___: UIViewController {
     
-    // :MARK @IBOutlets
+    // MARK: @IBOutlets
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-    // :MARK ViewModel
+    // MARK: ViewModel
     
     @Injected
     private var viewModel: PinViewModelType
     
-    // :MARK Coordinator
+    // MARK: Coordinator
     
     var coordinator: CoordinatorType!
     
-    // :MARK Delegate
+    // MARK: Delegate
     
     weak var delegate: Delegate?
     
-    // :MARK Cancellable
+    // MARK: Cancellable
     
     private var cancellables = Set<AnyCancellable>()
     
-    // :MARK UI State Variables (Avoid if possible)
+    // MARK: UI State Variables (Avoid if possible)
     
     var finishedPlaying: Bool
     
-    // :MARK LifeCycle
+    // MARK: LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,17 +47,17 @@ class ___FILEBASENAME___: UIViewController {
         super.viewDidAppear(animated)
     }
     
-    // :MARK Configure
+    // MARK: Configure
     
     private func configure() {}
     
     private func configureBindings() {}
     
-    // :MARK @IBActions
+    // MARK: @IBActions
     
     @IBAction func pop() {}
     
-    // :MARK Override UIViewController functions
+    // MARK: Override UIViewController functions
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -70,5 +70,5 @@ class ___FILEBASENAME___: UIViewController {
     
 }
 
-// :MARK Extensions
+// MARK: Extensions
 extension ___FILEBASENAME___ {}

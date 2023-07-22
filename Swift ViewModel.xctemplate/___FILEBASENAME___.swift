@@ -31,6 +31,10 @@ class ___FILEBASENAME___: ___FILEBASENAME___Type {
     @Injected
     private var modelService: ModelServiceType
 
+    // MARK: State variables
+    
+    let lock = NSLock()
+
     // MARK: Init
 
     init() {

@@ -1,3 +1,9 @@
+import Foundation
+import Combine
+import MustacheCombine
+import MustacheServices
+import Resolver
+
 protocol ___FILEBASENAME___Type {
     
     var model: Model? { get }

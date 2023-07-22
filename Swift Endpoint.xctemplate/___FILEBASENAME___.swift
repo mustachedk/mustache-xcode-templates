@@ -30,10 +30,9 @@ extension ___FILEBASENAME___: Endpoint {
     var parameters: [String: String]? {
         switch self {
             case .list(let page, let size):
-                if let page, let size {
-                    parameters["page"] = "\(page)"
-                    parameters["size"] = "\(size)"
-                }
+                var parameters: [String: String] = [:]
+                parameters["page"] = "\(page)"
+                parameters["size"] = "\(size)"
                 return parameters
             default:
                 return nil
@@ -71,7 +70,7 @@ extension ___FILEBASENAME___: Endpoint {
     }
     
     var encoding: EncodingType {
-        return .json
+        return .json()
     }
     
     var authentication: Authentication {
